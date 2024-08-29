@@ -1,8 +1,8 @@
 {
   "name": "mailer-microservice",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "1.0.0",
+  "description": "Mailer microservice for NestJS with RabbitMQ",
+  "author": "Orkhan Karimov",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {

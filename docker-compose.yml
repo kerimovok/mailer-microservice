@@ -1,0 +1,16 @@
+services:
+  mailer-microservice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - FRONTEND_URL=${FRONTEND_URL}
+      - BACKEND_URL=${BACKEND_URL}
+      - RABBIT_MQ_URI=${RABBIT_MQ_URI}
+      - RABBIT_MQ_MAILER_MICROSERVICE_QUEUE=${RABBIT_MQ_MAILER_MICROSERVICE_QUEUE}
+      - EMAIL_HOST=${EMAIL_HOST}
+      - EMAIL_PORT=${EMAIL_PORT}
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
+      - EMAIL_FROM=${EMAIL_FROM}
+    restart: always
